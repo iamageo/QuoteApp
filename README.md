@@ -1,5 +1,7 @@
-# quote
-🔥 simple quote app using MVVM, Retrofit, Coroutines and Dagger Hilt 💉
+<h4 align="center">🔥 simple quote app using MVVM, Retrofit, Coroutines and Dagger Hilt 💉</h4>
+
+
+https://user-images.githubusercontent.com/26925002/140652074-e3cc6df6-a896-4963-9138-c6e6cee913bf.mp4
 
 ### 📚 knowledges and technologies
 - [x] ViewBinding
@@ -9,6 +11,9 @@
 - [x] Clean Architecture
 - [ ] Kapt
 - [ ] Dagger Hilt
+
+### 📚 use case
+- [x] when clicking on the screen a random quote is show
 
 ### 📚 used libraries
 * Retrofit: implementation "com.squareup.retrofit2:retrofit:2.9.0"
