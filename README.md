@@ -7,7 +7,7 @@ https://user-images.githubusercontent.com/26925002/140652074-e3cc6df6-a896-4963-
 - [x] ViewBinding
 - [x] Retrofit
 - [x] Coroutines
-- [x] MVVM Arquitecture
+- [x] MVVM Architecture
 - [x] Clean Architecture
 - [ ] Kapt
 - [ ] Dagger Hilt
