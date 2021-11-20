@@ -4,14 +4,14 @@ import com.iamageo.quote.core.RetrofitHelper
 import com.iamageo.quote.data.model.Quote
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.withContext
+import javax.inject.Inject
 
-class QuoteService {
+class QuoteService @Inject constructor(private val apiClient: QuoteAPIClient) {
 
-    private val retrofit = RetrofitHelper.getRetrofit()
 
     suspend fun getRandomQuote(): Quote {
         return withContext(Dispatchers.IO) {
-            val response = retrofit.create(QuoteAPIClient::class.java).getRandomQuote()
+            val response = apiClient.getRandomQuote()
             response.body() ?: Quote("something went wrong, try again!", "")
         }
     }

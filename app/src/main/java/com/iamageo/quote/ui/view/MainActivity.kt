@@ -6,12 +6,15 @@ import androidx.appcompat.app.AppCompatActivity
 import com.iamageo.quote.data.model.Quote
 import com.iamageo.quote.databinding.ActivityMainBinding
 import com.iamageo.quote.ui.viewmodel.QuoteViewModel
+import dagger.hilt.android.AndroidEntryPoint
 
+@AndroidEntryPoint
 class MainActivity : AppCompatActivity() {
 
     lateinit var binding: ActivityMainBinding
 
     private val viewModel: QuoteViewModel by viewModels()
+
 
     override fun onCreate(savedInstanceState: Bundle?) {
         binding = ActivityMainBinding.inflate(layoutInflater)
