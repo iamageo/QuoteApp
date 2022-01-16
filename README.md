@@ -1,34 +1,36 @@
-<h4 align="center">🔥 simple quote app using MVVM, Retrofit, Coroutines and Dagger Hilt 💉</h4>
+<p align="center">  
+🔥 simple quote app using MVVM, Retrofit, Coroutines and Dagger Hilt 💉
+</p>
+</br>
 
+<img src="https://user-images.githubusercontent.com/26925002/149682820-ebcd4f80-404f-48c0-a13b-a8e80276a756.png" align="right" width="32%"/>
 
-https://user-images.githubusercontent.com/26925002/140652074-e3cc6df6-a896-4963-9138-c6e6cee913bf.mp4
-
-### 📚 knowledges and technologies
-- [x] ViewBinding
-- [x] Retrofit
-- [x] Coroutines
-- [x] MVVM Architecture
-- [x] Clean Architecture
-- [ ] Kapt
-- [ ] Dagger Hilt
+## Tech stack & Open-source libraries
+- Minimum SDK level 19
+- [Kotlin](https://kotlinlang.org/) based, [Coroutines](https://github.com/Kotlin/kotlinx.coroutines)
+- Jetpack
+  - Lifecycle - dispose of observing data when lifecycle state changes.
+  - ViewModel - UI related data holder, lifecycle aware.
+- Architecture
+  - MVVM Architecture (View - DataBinding - ViewModel - Model)
+  - Repository pattern
+- [Retrofit2 & OkHttp3](https://github.com/square/retrofit) - construct the REST APIs.
+- [Material-Components](https://github.com/material-components/material-components-android) - Material design components for building ripple animation, and CardView.
+- [Dagger Hilt](https://dagger.dev/hilt/) - for Dependency Injection
 
 ### 📚 use case
 - [x] when clicking on the screen a random quote is show
 
-### 📚 used libraries
-* Retrofit: implementation "com.squareup.retrofit2:retrofit:2.9.0"
-* Gson: implementation "com.squareup.retrofit2:converter-gson:2.9.0" 
-* Coroutines: implementation 'org.jetbrains.kotlinx:kotlinx-coroutines-android:1.5.0'
-* Kapt: 
-* Dagger Hilt: 
 
-Thanks Luke Peavey for awesome library of quotes.
-* quotable: https://github.com/lukePeavey/quotable
-Consume route: https://api.quotable.io/random 
+## MAD Score
+![summary](https://user-images.githubusercontent.com/24237865/102366914-84f6b000-3ffc-11eb-8d49-b20694239782.png)
+![kotlin](https://user-images.githubusercontent.com/24237865/102366932-8a53fa80-3ffc-11eb-8131-fd6745a6f079.png)
 
-### 🍀how to contribute
-1. Fork it (<https://github.com/iamageo/quote/fork>)
-2. Create your feature branch (`git checkout -b feature/fooBar`)
-3. Commit your changes (`git commit -am 'Add some fooBar'`)
-4. Push to the branch (`git push origin feature/fooBar`)
-5. Create a new Pull Request
+## Architecture
+Quote is based on the MVVM architecture and the Repository pattern.
+
+![architecture](https://user-images.githubusercontent.com/24237865/77502018-f7d36000-6e9c-11ea-92b0-1097240c8689.png)
+
+## Quote API
+
+Thanks Luke Peavey for awesome library of quotes. [Quotable](https://github.com/lukePeavey/quotable)
