@@ -1,5 +1,6 @@
 package com.iamageo.quote.ui.viewmodel
 
+import androidx.hilt.lifecycle.ViewModelInject
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
@@ -9,15 +10,14 @@ import dagger.hilt.android.lifecycle.HiltViewModel
 import kotlinx.coroutines.launch
 import javax.inject.Inject
 
-@HiltViewModel
-class QuoteViewModel @Inject constructor(private val getQuote: QuoteUseCase): ViewModel() {
+class QuoteViewModel @ViewModelInject constructor(private val useCase: QuoteUseCase): ViewModel() {
 
     val quoteModel = MutableLiveData<Quote>()
 
     fun onCreate() {
 
         viewModelScope.launch {
-            quoteModel.postValue(getQuote()!!)
+            quoteModel.postValue(useCase()!!)
         }
     }
 

@@ -7,6 +7,8 @@ import com.iamageo.quote.data.model.Quote
 import com.iamageo.quote.databinding.ActivityMainBinding
 import com.iamageo.quote.ui.viewmodel.QuoteViewModel
 import dagger.hilt.android.AndroidEntryPoint
+import kotlinx.coroutines.ExperimentalCoroutinesApi
+
 
 @AndroidEntryPoint
 class MainActivity : AppCompatActivity() {

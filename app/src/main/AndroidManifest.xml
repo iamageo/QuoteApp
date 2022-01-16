@@ -8,6 +8,7 @@
     <application
         android:name=".AppQuote"
         android:allowBackup="false"
+        android:name=".QuoteApplication"
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
