@@ -1,5 +1,5 @@
 <p align="center">  
-🔥 simple quote app using MVVM, Retrofit, Coroutines and Dagger Hilt 💉
+🔥 Simple quote app using Clean Architecture, MVVM, Retrofit, Coroutines and Dagger Hilt 💉
 </p>
 </br>
 
@@ -12,6 +12,7 @@
   - Lifecycle - dispose of observing data when lifecycle state changes.
   - ViewModel - UI related data holder, lifecycle aware.
 - Architecture
+  - [Clean Architecture](https://developer.android.com/jetpack/guide) 
   - MVVM Architecture (View - DataBinding - ViewModel - Model)
   - Repository pattern
 - [Retrofit2 & OkHttp3](https://github.com/square/retrofit) - construct the REST APIs.
